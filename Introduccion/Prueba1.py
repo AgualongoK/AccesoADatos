@@ -69,12 +69,28 @@ else :
 
 #Ejemplo de un for
 numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
-for num in numeros : 
-    if num % 2 == 0 : 
-        print(num)
-        
+    
 
-print("Numeros impares: ")
-for num in numeros : 
-    if num % 2 != 0 : 
-        print(num)
+#Ejercicio que simule un menu y el usuario introduzca su opcion
+opcion = int(input("Selecciona lo que quieres imprimir: 1Pares 2Impares 3Ambos"))
+
+if opcion == 1 :
+    print("Numeros pares: ")
+    for num in numeros : 
+        if num % 2 == 0 : 
+            print(num)
+elif opcion == 2 : 
+    print("Numeros impares: ")
+    for num in numeros : 
+        if num % 2 != 0 : 
+            print(num)
+elif opcion == 3 :
+    print("Numeros pares e impares")
+    for num in numeros : 
+        if num % 2 == 0 : 
+             print(num)
+    for num in numeros : 
+        if num % 2 != 0 : 
+             print(num)
+else : 
+    print("Opcion no disponible")
