@@ -72,6 +72,8 @@ numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
     
 
 #Ejercicio que simule un menu y el usuario introduzca su opcion
+
+"""
 opcion = int(input("Selecciona lo que quieres imprimir: 1Pares 2Impares 3Ambos"))
 
 if opcion == 1 :
@@ -94,3 +96,21 @@ elif opcion == 3 :
              print(num)
 else : 
     print("Opcion no disponible")
+
+
+palabras = ['Peine','Pelo','Ventana','Refrigerador','Adolescente','Dentista','Asesino']
+for caracteres in palabras:
+    print((caracteres),(len (caracteres)))
+
+"""
+
+# Declarar una lista con una frase, recorrer y decir cuantas 'a' hay
+frase = ["Hola, estoy programando en python"]
+contador = 0
+
+for caracteres in frase:
+    if "a" in caracteres :
+        contador = contador + 1
+        contador += contador
+
+print("Hay un total de " + str(contador) + " 'a'")
