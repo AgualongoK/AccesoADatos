@@ -48,7 +48,6 @@ poejje
 """
 
 print("texto despues de un comentario de bloque")
-
 anio =  int(input("dime un anio"))
 print(anio)
 
@@ -56,6 +55,7 @@ print(anio)
 #Si la diferecencia es mas que 100 anios: esto es mayor que un siglo
 #Si la diferencia es menor a 100: esto es menor que un siglo
 
+"""
 anio1 = int(input("dime un anio"))
 anio2 = int(input("dime un anio"))
 
@@ -64,4 +64,17 @@ if (anio1 - anio2) > 100 :
 elif (anio1 - anio2) < 100 :
     print("La diferencia es menor que un siglo")
 else : 
-    print("Errod de comparacion")
+    print("Error de comparacion")
+"""
+
+#Ejemplo de un for
+numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+for num in numeros : 
+    if num % 2 == 0 : 
+        print(num)
+        
+
+print("Numeros impares: ")
+for num in numeros : 
+    if num % 2 != 0 : 
+        print(num)
