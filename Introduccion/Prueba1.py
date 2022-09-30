@@ -28,3 +28,10 @@ print(objetos)
 nombres = ("Ricardo","Maria","Laura")
 print(nombres)
 print(nombres[2])
+
+MiDiccionario - {
+    'Nombre' : 'Luismi',
+    'Edad' : 20,
+    'Pais' : 'Espania'
+}
+
