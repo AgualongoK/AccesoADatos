@@ -37,6 +37,7 @@ opcion = 0
 def dameNumeros():
     num1 = int(input("Introduce un numero: "))
     num2 = int(input("Introduce un numero: "))
+    return(num1,num2)
        
 while (opcion!=7):
     opcion = int(input("""
@@ -52,7 +53,7 @@ while (opcion!=7):
     if opcion == 1:
         num1 = int(input("Introduce un numero: "))
         num2 = int(input("Introduce un numero: "))
-        sumar(num1,num2)
+        sumar()
     if opcion == 2:
         num1 = int(input("Introduce un numero: "))
         num2 = int(input("Introduce un numero: "))
