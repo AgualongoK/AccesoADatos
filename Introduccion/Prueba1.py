@@ -135,8 +135,9 @@ print("El numero mayor es:", aux)
 edad = int(input("Indique su edad"))
 
 if edad<=4:
-        print("Entrada gratuita")
-if edad>4 and edad<=18:
-        print("Entrada 5€")
-if edad > 18:
-        print("Entrada 10€")
+    precio=0
+elif edad >=4 and edad <=18:
+    precio = 5
+else:
+    precio = 10
+print("Total a pagar:", precio)
