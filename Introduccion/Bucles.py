@@ -51,27 +51,21 @@ while (opcion!=7):
         7.Salir"""))
     
     if opcion == 1:
-        num1 = int(input("Introduce un numero: "))
-        num2 = int(input("Introduce un numero: "))
-        sumar()
+        a,b = dameNumeros()
+        sumar(a,b)
     if opcion == 2:
-        num1 = int(input("Introduce un numero: "))
-        num2 = int(input("Introduce un numero: "))
-        restar(num1,num2)
+        a,b = dameNumeros()
+        restar(a,b)
     if opcion == 3:
-        num1 = int(input("Introduce un numero: "))
-        num2 = int(input("Introduce un numero: "))
-        multiplicar(num1,num2)
+        a,b = dameNumeros()
+        multiplicar(a,b)
     if opcion == 4:
-        num1 = int(input("Introduce un numero: "))
-        num2 = int(input("Introduce un numero: "))
-        dividir(num1,num2)
+        a,b = dameNumeros()
+        dividir(a,b)
     if opcion == 5:
-        num1 = int(input("Introduce un numero: "))
-        num2 = int(input("Introduce un numero: "))
-        exponente(num1,num2)
+        a,b = dameNumeros()
+        exponente(a,b)
     if opcion == 6:
-        num1 = int(input("Introduce un numero: "))
-        num2 = int(input("Introduce un numero: "))
-        numerosPares(num1,num2)
+        a,b = dameNumeros()
+        numerosPares(a,b)
         
