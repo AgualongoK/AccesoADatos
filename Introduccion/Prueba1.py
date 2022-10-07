@@ -116,7 +116,7 @@ for caracteres in frase:
 
 print("Hay un total de " + str(contador) + " 'a'")
 
-"""
+
 
 # Ejercicio: un programa que lea 4 numeros y muestre por pantalla el mayor
 aux = 0
@@ -125,3 +125,18 @@ for i in range(4):
     if m>aux:
         aux=m
 print("El numero mayor es:", aux)
+
+"""
+# Ejercicio: programa para una empresa de salas de Juegos para todas las edades y quiere calcular de forma
+# automática el precio que debe cobrar a sus clientes por entrar.
+# El programa debe preguntar al usuario la edad del cliente y mostrar el precio de la entrada. Si el cliente
+# es menor de 4 años entra gratis, entre 4 y 18 años paga 5E y si es mayor de 18 paga 10E
+
+edad = int(input("Indique su edad"))
+
+if edad<=4:
+        print("Entrada gratuita")
+if edad>4 and edad<=18:
+        print("Entrada 5€")
+if edad > 18:
+        print("Entrada 10€")
