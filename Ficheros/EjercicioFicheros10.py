@@ -13,3 +13,11 @@ with open ("ejercicio2-tabla.txt","r") as f:
 f.close()
 
 # Opcion 2
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+numero = int(input("Escribe un numero de:"))
+with open ("ejercicio2-tabla.txt","r") as f:
+    texto=(linea for i, linea in enumerate(f) if i>0 and i<numero)
+    for linea in texto:
+        print(linea)
+f.close()
