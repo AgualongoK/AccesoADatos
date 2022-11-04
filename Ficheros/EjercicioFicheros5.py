@@ -12,3 +12,14 @@ numero = input()
 f = open("ejercicio1-100.txt","w") 
 f.write(numero)
 f.close()
+
+
+'''
+Opcion formal:
+
+n = int(input('Introduce un numero entero entre 1 y 100: '))
+nombre_fichero = 'ejercicio1-100.txt'
+with open(nombre_fichero, 'w') as f:
+    f.write(str(n))
+f.close()
+'''
