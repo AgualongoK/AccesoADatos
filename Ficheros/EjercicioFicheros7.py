@@ -18,7 +18,6 @@ with open("ejercicio3-tabla.txt", 'w') as f:
 
     for indice in range(1, (numero+1)):
         f.write("\n" + "Tabla del " + str(indice) + "\n")
-        for e in range(1,11):
+        for e in range(0,11):
                 f.write(str(indice) + "x" + str(e) + "=" + str(indice*e) + "\n")
-
 f.close()
