@@ -2,11 +2,3 @@ Este es mi primer programa de fichero y lo he escrito en python usando la forma 
  f = open() 
  f.write() 
  f.close()
- Opcion 
- Opcion 
- Opcion 
- Opcion 
- Opcion 
- Opcion 
- Opcion 
- Opcion 
