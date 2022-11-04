@@ -1,0 +1,8 @@
+Este es mi primer programa de fichero y lo he escrito en python usando la forma clasica, que es la siguiente: 
+ f = open() 
+ f.write() 
+ f.close()
+
+Escribiendo 
+listas 
+en ficheros con a
