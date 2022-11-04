@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-
 # -*- coding: utf-8 -*-
+
+#Leer lineas pero con un metodo
 
 #Abrimos usando Read (r)
 with open("ficheroenpython.txt", "r") as f:
