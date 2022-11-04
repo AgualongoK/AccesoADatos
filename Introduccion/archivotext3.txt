@@ -1,0 +1,6 @@
+creando archivo de texto en python usando with as
+linea2
+linea3
+linea4
+linea5
+fin fichero
