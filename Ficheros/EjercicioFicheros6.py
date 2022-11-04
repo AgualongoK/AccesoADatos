@@ -15,7 +15,7 @@ numero = int(input('Introduce un numero entero entre 1 y 10'))
 
 nombre_fichero = "ejercicio2-tabla.txt"
 
-with open("ejercicio2-tabla.txt", 'w') as f:
+with open(nombre_fichero, 'w') as f:
 
     for i in range(1,11):
             resultado = numero * i
