@@ -1,1 +1,0 @@
-Creando archivo de texto en python with as

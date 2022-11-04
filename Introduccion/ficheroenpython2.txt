@@ -1,5 +1,0 @@
-Este es mi primer programa de fichero y lo he escrito en python usando la 
-forma recomendada, que es la siguiente: 
- with open() as f 
- f.write() 
- f.close()
