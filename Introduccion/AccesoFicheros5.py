@@ -18,3 +18,4 @@ with open("ficheroenpython.txt", "r+") as f: #Abrimos el fichero utilizando Rees
     #Escribimos la nueva linea
     f.write("Escribiendo una nueva linea al principio \n")
 f.close()
+
