@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+#Escribir el contenido de un array en un fichero
+
 Lista = ["\nEscribiendo \n", "listas \n", "en ficheros"]
 
 #Abrimos fichero como Reescribir (r+)
