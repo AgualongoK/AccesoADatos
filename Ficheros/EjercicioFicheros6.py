@@ -1,5 +1,5 @@
 '''
-Ejercicio:
+Ejercicio 2:
 Escribe un programa que pida por teclado un numero positivo entre 1 y 
 10 y guarde en un fichero llamado "ejercicio2-tabla.txt" la tabla de 
 multiplicar (sin contar el 0) del numero introducido
