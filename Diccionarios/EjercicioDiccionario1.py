@@ -115,3 +115,30 @@ text2 = "Python es un lenguaje de programacion que permite tipar pero no permite
 print(text2.split(','))
 print(text2.split(' '))
 print(text2.split('e'))
+
+'''
+20 Crea un programa que a partir del fichero de "prueba1.txt" el cual contiene exactamente esto:
+A,1
+B,2
+C,3
+D,4
+
+Abra el fichero en modo lectura y para cada line del fichero, imprima
+20.a) el contenido de la linea
+20b) el contenido de cada linea desglosado por caracteres:
+    ('A',',','1,'\n)
+20.c) El contenido de cada linea en formato 'primer elemtno', 'segundo elemento' o lo que
+es lo mismo, clave-valor:
+    ('A','1'\n)
+'''
+print("---- Ejercicio 20 ----")
+
+with open("prueba1.txt", "r") as f:
+    for i in range(len("prueba1.txt")):
+        print(f.readline())
+f.close()
+
+with open("prueba1.txt", "r") as f:
+    for i in range(len("prueba1.txt")):
+        print(f.readline().split(','))
+f.close()
