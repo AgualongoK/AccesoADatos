@@ -1,5 +1,5 @@
 '''
-Ejercicio: 
+Ejercicio 1: 
 Escribe un programa que pida por teclado un numero positivo entre 1 y 100
 y lo guarde en un fichero llamado "ejercicio1-10.txt"
 '''
