@@ -145,3 +145,27 @@ f.close()
 
 print("\n\n --- TUPLEANDO ---")
 mitupla = tuple([1,4,6])
+print(mitupla)
+
+mitupla2=tuple("texto")
+print(mitupla2)
+
+mitupla3=tuple({4:'one', 6:'two'})
+print(mitupla3)
+print(mitupla3[0])
+
+#como crear un diccionario directamente: dic
+midic2=dict(nombre="lm", altura=195, ojos='azules')
+print(midic2)
+
+'''
+Pasos a seguir para el eje.20
+-abrir el fichero en modo lectura
+-guardar el contenido del fichero en una variable
+-cerrar el fichero
+-iterar sobre el contenido cada linea
+-imprimir lo que se pide
+    a:cada linea
+    b:tuplear
+    c:tuplear
+'''
