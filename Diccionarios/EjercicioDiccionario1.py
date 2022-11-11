@@ -142,3 +142,6 @@ with open("prueba1.txt", "r") as f:
     for i in range(len("prueba1.txt")):
         print(f.readline().split(','))
 f.close()
+
+print("\n\n --- TUPLEANDO ---")
+mitupla = tuple([1,4,6])
