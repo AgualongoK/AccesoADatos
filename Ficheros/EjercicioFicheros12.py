@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 '''
+Ejercicio2:
 Escribe un programa que pida por teclado un numero positivo entre
 1 y 10 y guarde en un fichero llamado "ejercicio2_2-tabla.txt." la tabla
 de multiplicar del numero introducido

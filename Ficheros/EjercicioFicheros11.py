@@ -1,4 +1,5 @@
 '''
+11/11/2022
 Ejercicio1:
 Escribe un programa que pida por teclado un numero entre 1 y 
 100 y lo guarde en un fichero llamado "ejercicio-100.txt"
