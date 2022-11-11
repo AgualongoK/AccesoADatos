@@ -194,16 +194,18 @@ En caso de no estar la letra introducida, mostrará un mensaje indicando:
 print("\n\n\n\n")
 
 print("----- EJERCICIO 21 ----- ")
+
+
 letra = str(input("Introduzca a la letra a buscar"))
 
-with open ("prueba1.txt", "r") as f:
-      contenidofichero = f.readline()
-      for line in contenidofichero:
-        if letra in line:
-            print("letra encontrada")
-            print(letra)
-            break
-        else:
-            print("letra no encontrada")
-            break
-f.close()
+contenido = dict([tuple(line.split(',')) for line in contenido])
+# La linea anterior recorre el contenido del cihero que esta almacenado en "contenido"
+# el for recorre contenido y en cada iteración guarda el par clave-valor en line
+# crea una tupla que la parte (split) por las comas
+# genera un diccionario (dict) con la tupla
+# el diccionario lo guardo en "contenido"
+
+if letra in contenido:
+    print("Letra encontrada \n" + "Valor: " + contenido[letra])
+else:
+    print("No se ha encontradola letra " + letra)
