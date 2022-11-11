@@ -94,3 +94,24 @@ print(len(MiDiccionario))
 # cuantos elementos contiene esa clave, que deberian ser 2
 print("\n\n ----Longitud de una clave de un diccionario")
 print(len(MiDiccionario["Padres"]))
+
+#18 SPLIT
+print("\n\n ---Split----")
+text = "Partiendo con split"
+print(text.split())
+
+#19 
+'''
+Escribe el siguiente texto y partelo
+Python es un lenguaje de programacion que permite tipar pero
+no permite compilar, ya que es un lenguaje interpretado
+
+19a: cogiendo las comas como separador
+19.b: cogiendo los espacios en blanco
+19.c: cogiendo la letra 'e'
+''' 
+
+text2 = "Python es un lenguaje de programacion que permite tipar pero no permite compilar, ya que es un lenguaje interpretado"
+print(text2.split(','))
+print(text2.split(' '))
+print(text2.split('e'))
