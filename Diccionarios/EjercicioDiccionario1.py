@@ -58,3 +58,39 @@ print(MiDiccionario.get('Apellido')) # forma 2 con get
 #10 aniadir a una variable el valor de una clave
 valorVariable = MiDiccionario.get("Nombre")
 print(valorVariable)
+
+# 11 Imprimir las claves del diccionario: .keys()
+print(MiDiccionario.keys())
+
+# 12 Imprimir todos los valores: .value
+print(MiDiccionario.values())
+
+# TUPLAS
+
+# 13 Crear una tupla: ()
+Cosas =  ("casa", "puerta", "reloj", "mesa", "silla", "banco", "cuadro", "alfombra")
+
+Numeros = (1,2,3,4,5)
+
+# 14 como ver el par (clave-valor) de un diccionario; devuelve una tupla
+print("\n\n --------------")
+print(MiDiccionario.items())
+
+# 15 Crear una tupla
+Numeros2 = (111,222,333,444,555,666)
+#15 Slice: vamos a imprimir partes (rebanadas) de una tupla y vamos 
+# a seleccionar (imprimir) los tres primeros elementos de la tupla
+print(Numeros2[0:3])
+print(Numeros2[1:3])
+print(Numeros2[:-3])
+print(Numeros2[-2:])
+
+#16 como saber la longitud de un diccionario
+print("\n\n ----Longitud diccionario ----")
+print(len(MiDiccionario))
+
+#17 como saber la longitud de una clave de un diccionario`
+# quiero saber la longitud de la clave padres, es decir
+# cuantos elementos contiene esa clave, que deberian ser 2
+print("\n\n ----Longitud de una clave de un diccionario")
+print(len(MiDiccionario["Padres"]))
