@@ -11,6 +11,7 @@ Ampliar el diccionario de abajo con los siguientes campos.Ponerlos en codigo
 6*Aniadir un campo Grupo nuevo al final
 7*Cambiar el nombre de una clave por otro. Por ejemplo cambiar la clave Grupo por la Casa
 sin necesidad de usar for para recorrer la clave ni el diccionario
+8*Borrar un par clave-valor
 '''
 
 #1
@@ -40,8 +41,20 @@ MiDiccionario["Edad"] = 22
 print(MiDiccionario["Edad"])
 
 #6
-MiDiccionario["Grupo"] = ""
+MiDiccionario["Grupo"] = "Gryffindor"
 print(MiDiccionario)
 
 #7
 MiDiccionario["Casa"]=MiDiccionario.pop("Grupo")
+
+#8
+del MiDiccionario["Edad"]
+print(MiDiccionario)
+
+#9 dos formas de obtener el valor de una clave
+print(MiDiccionario['Apellido']) # forma 1 
+print(MiDiccionario.get('Apellido')) # forma 2 con get
+
+#10 aniadir a una variable el valor de una clave
+valorVariable = MiDiccionario.get("Nombre")
+print(valorVariable)
