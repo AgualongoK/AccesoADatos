@@ -201,6 +201,7 @@ with open ("prueba1.txt", "r") as f:
       for line in contenidofichero:
         if letra in line:
             print("letra encontrada")
+            print(letra)
             break
         else:
             print("letra no encontrada")
