@@ -138,11 +138,6 @@ with open("prueba1.txt", "r") as f:
         print(f.readline())
 f.close()
 
-with open("prueba1.txt", "r") as f:
-    for i in range(len("prueba1.txt")):
-        print(f.readline().split(','))
-f.close()
-
 print("\n\n --- TUPLEANDO ---")
 mitupla = tuple([1,4,6])
 print(mitupla)
@@ -169,3 +164,45 @@ Pasos a seguir para el eje.20
     b:tuplear
     c:tuplear
 '''
+
+print("\n\n\n\n")
+file="prueba1.txt"
+f=open(file,'r')
+contenido = f.readlines()
+f.close()
+
+line = str()
+for line in contenido:
+    print("el contenido de cada linea es:" , line)
+    print(tuple(line))
+    print(tuple(line.split(',')))
+
+'''
+21
+20 Crea un programa que a partir del fichero de "prueba1.txt" el cual contiene exactamente esto:
+A,1
+B,2
+C,3
+D,4
+
+Abra el fichero en modo lectura y para cada linea del fichero e indique si una letra introducida
+por teclado está dentro del fichero, y de estarlo, qué valor tiene asociado
+En caso de no estar la letra introducida, mostrará un mensaje indicando:
+"la letra leida" ; "la letra leída no se encuentra en el fichero"
+'''
+
+print("\n\n\n\n")
+
+print("----- EJERCICIO 21 ----- ")
+letra = str(input("Introduzca a la letra a buscar"))
+
+with open ("prueba1.txt", "r") as f:
+      contenidofichero = f.readline()
+      for line in contenidofichero:
+        if letra in line:
+            print("letra encontrada")
+            break
+        else:
+            print("letra no encontrada")
+            break
+f.close()
