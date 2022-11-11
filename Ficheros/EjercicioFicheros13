@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+'''
+Modifica el ejercicio anterior para que el fichero tenga el nombre
+del numero que se crea la tabla de multiplicar. Por ejemplo, si 
+se introduce por teclado el 9, que el fichero se llame 'ejercicio2-tabladel9.txt'
+'''
+
+num = int(input('Introduce un numero del 1 al 20:'))
+
+nombre_fichero = "ejercicio2-tabladel" + str(num) + '.txt'
+
+with open(nombre_fichero, "w") as f:
+    for i in range(11):
+     f.write(str(num) + 'x' + str(i) + '=' + str(num*i) + '\n')
+f.close
