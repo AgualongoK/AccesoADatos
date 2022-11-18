@@ -29,10 +29,25 @@ def crear_fichero(file):
         answer = input('El fichero ' + file + ' ya existe. ¿Desea vaciarlo? (S/N)')
         if answer == 'N':
             return 'No se ha creado el fichero porque ya existe'
-            
+
     f = open(file,'w')
     f.close
     return 'Se ha creado el fichero para la agenda. \n'
+
+def  Telefono_nuevo(file, cliente, telf):
+    '''
+    Funcion que añade el telefono de un cliente de un fichero dado
+    Parametros:
+        file: es un fichero con los nombres y telefonos de clientes
+        cliente: es una cadena (string) con el nombre del cliente
+        telf: es una cadena (string) con el telefono del cliente
+    Devuelve:
+        un mensaje informando sobre si el telefono se ha añadido o ha habido algun problema
+    '''
+    with open (file,"r+") as f:
+        f.write(cliente+ ',' + telf)
+        print('Contacto aniadido correctamente')
+    f.close()
 
 def lanzarPorgama():
     '''
@@ -46,7 +61,9 @@ def lanzarPorgama():
         if opcion == '1':
             crear_fichero(fichero)
         if opcion == '2':
-            print("menu2")
+            nombre = str(input("Nombre del contacto"))
+            telefono = str(input("Numero del contacto"))
+            print(Telefono_nuevo(fichero, nombre, telefono))
         if opcion == '3':
             print("menu3")
         if opcion == '4':
