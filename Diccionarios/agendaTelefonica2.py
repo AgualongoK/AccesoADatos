@@ -70,11 +70,14 @@ def Consulta_Telefono(file, cliente):
     except FileNotFoundError:
          print('ERROR: no se ha encontrado el fichero')
     else:
+        directorio = f.readlines()
         f.close()
-        f2 = open(file, 'r')
-        contenidoFichero = f.readlines()
         directorio = dict([tuple(line.split(',')) for line in directorio])
-        f.close()
+        if cliente in directorio:
+            return directorio[cliente]
+        else:
+            return('El cliente ' + cliente + ' no existe! \n')
+        
 
 def lanzarPorgama():
     '''
@@ -92,7 +95,8 @@ def lanzarPorgama():
             telefono = str(input("Numero del contacto"))
             Telefono_nuevo(fichero, nombre, telefono)
         if opcion == '3':
-            print("menu3")
+            cliente = str(input("Nombre del contacto"))
+            Consulta_Telefono(fichero,cliente)
         if opcion == '4':
             print("menu4")
         else:
