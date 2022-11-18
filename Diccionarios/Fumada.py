@@ -31,3 +31,4 @@ for i in range(len(mitupla)):
 
 print(milista)
 print("\n\n El diccionario completo contiene: ", midict)
+print("el valor de la clave 'a' es : ", midict.get('a'))
