@@ -55,6 +55,27 @@ def  Telefono_nuevo(file, cliente, telf):
         f.close()
         print('Contacto aniadido correctamente')
 
+def Consulta_Telefono(file, cliente):
+    '''
+    Funcion que devuelve el telefono d eun cliente de un fichero dado
+    Parametros:
+        file: es un fichero con los nombres y telefonos de clientes
+        cliente: es una cadena con el nombre del cliente
+    Devuelve:
+        el telefono del cliente guardado en el fichero o un mensaje de error si el telefono o el 
+        fichero no existe
+    '''
+    try:
+        f = open(file,'r')
+    except FileNotFoundError:
+         print('ERROR: no se ha encontrado el fichero')
+    else:
+        f.close()
+        f2 = open(file, 'r')
+        contenidoFichero = f.readlines()
+        directorio = dict([tuple(line.split(',')) for line in directorio])
+        f.close()
+
 def lanzarPorgama():
     '''
     Funcion que lanza las opciones del menu de la aplicacion para la gestion de agenda telefonica
