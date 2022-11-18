@@ -44,10 +44,14 @@ def  Telefono_nuevo(file, cliente, telf):
     Devuelve:
         un mensaje informando sobre si el telefono se ha añadido o ha habido algun problema
     '''
-    with open (file,"r+") as f:
-        f.write(cliente+ ',' + telf)
+    try:
+        f = open(file,"a")
+    except FileNotFoundError:
+        print('ERROR: no se ha podido aniadir el contacto')
+    else:
+        f.write('\n' + cliente + ',' + telf)
+        f.close()
         print('Contacto aniadido correctamente')
-    f.close()
 
 def lanzarPorgama():
     '''
@@ -63,7 +67,7 @@ def lanzarPorgama():
         if opcion == '2':
             nombre = str(input("Nombre del contacto"))
             telefono = str(input("Numero del contacto"))
-            print(Telefono_nuevo(fichero, nombre, telefono))
+            (Telefono_nuevo(fichero, nombre, telefono))
         if opcion == '3':
             print("menu3")
         if opcion == '4':
@@ -72,6 +76,5 @@ def lanzarPorgama():
             break
 
     #return
-
 
 lanzarPorgama()
