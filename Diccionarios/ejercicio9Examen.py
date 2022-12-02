@@ -31,6 +31,7 @@ def existe_Error(file1, file2):
                     print("Datos del fichero desvio encontrados en el fichero de control " + str(i))
 
 def borrar_Errores(file1, file2):
+    print("entrada al metodo borrar_errores")
     try:   
         f = open(file1,"r")
         f2 = open(file2,"r")
@@ -70,12 +71,13 @@ def menu():
     )
 
 def inicio():
-    menu()
+    #menu()
     fichero1 = "ficheroexam3.txt"
     fichero2 = "ficheroexam4.txt"
 
     while True:
         try:
+            menu()
             opcion = int(input("Introduzca la opción a realizar: "))
 
             if opcion == 1:
