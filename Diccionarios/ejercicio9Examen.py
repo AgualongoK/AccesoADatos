@@ -35,6 +35,7 @@ def borrar_Errores(file1, file2):
     try:   
         f = open(file1,"r")
         f2 = open(file2,"r")
+        print("ficheros leidos")
     except FileNotFoundError:
          print('No se ha encontrado el fichero')
 
@@ -46,20 +47,24 @@ def borrar_Errores(file1, file2):
 
         directorio = dict([tuple(line.split(',')) for line in directorio])
         directorio2 = dict([tuple(line2.split(',')) for line2 in directorio2])
+
+        # Recorro las tuplas de cada diccionario y compruebo si son iguales, ya que si coincide, existiran en el fichero de control    
+    
+        try:
+            for i in directorio:
+                for i2 in directorio2:
+                    if i == i2:
+                        errores = (i2)
+                        print("***Borrando error: " + errores + " ***")
+        
+            del directorio[errores]
+            
+            print("Errores borrados satisdactoriamente")
+        except:
+           print("No se han borrado los errores")
         
     
-    # Recorro las tuplas de cada diccionario y compruebo si son iguales, ya que si coincide, existiran en el fichero de control
 
-    try:
-        for i in directorio:
-            for i2 in directorio2:
-                if i == i2:
-                    errores = (i2)
-        
-        del directorio[errores]
-
-    except:
-        print("No se han borrado los errores")
 
 def menu():
     print(
