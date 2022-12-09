@@ -130,9 +130,7 @@ def inicio():
 
     print("Me llamo " + nombre + " " + apellido + " tengo " + edad_letra + " anios y mi numero es: " + str(telefono))
 
-inicio()
+# inicio()
 
 # EJERCICIO SIN LISTAS
-
-
 
