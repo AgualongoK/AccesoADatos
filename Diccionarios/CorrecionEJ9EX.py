@@ -16,6 +16,38 @@ def Consulta_Errores(fichero2):
     except FileNotFoundError:
         print('\n El fichero ' + fichero2 + ' no existe! \n')
 
+def Existe_Error(fichero, fichero2):
+    clave1=[]
+    clave2=[]
+    contador=int(0)
+
+    try:
+        f = open(fichero,'r')
+        g = open(fichero2,'r')
+        directorio = f.readlines()
+        directorio2 = g.readlines()
+        f.close()
+        g.close()
+
+        #transformo el tipo de datos
+        directorio = dict([tuple(line.split(',')) for line in directorio])
+        directorio2 = dict([tuple(line.split(',')) for line in directorio2])
+        #almaceno las llaves de ambos ficheros en unas listas, para posteriormente compararlas
+        clave1 = directorio.keys()
+        clave2 = directorio2.keys()
+
+        print("clave1: datos del fichero de control:", clave1)
+        print("clave2: datos del fichero de desvio:", clave2)
+
+        for elemento in clave2:
+            if str(elemento) in clave1:
+                contador=contador+1
+        return(contador==len(clave2))
+
+    except FileNotFoundError:
+        print('\n Comprueba que existen ambos ficheros! \n')
+    
+
 def menu():
     print('\n','\n','Gestion del sistema de control de vuelo')
     print('=========================')
